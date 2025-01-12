@@ -10,5 +10,23 @@
 
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="OpenNatwestCSV" Grid.Column="0" Content="Natwest" Click="OpenNatwestCSV_Click" Height="48" Width="100"/>
+            <Button Name="OpenHalifaxCSV" Grid.Column="1" Content="Halifax" Click="OpenHalifaxCSV_Click" Height="48" Width="100"/>
+        </Grid>
+
+
     </Grid>
 </Page>

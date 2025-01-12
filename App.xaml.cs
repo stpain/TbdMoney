@@ -29,6 +29,9 @@ namespace TbdMoney
         public App()
         {
             this.InitializeComponent();
+
+            SQLitePCL.Batteries.Init();
+
             this.Suspending += OnSuspending;
         }
 
